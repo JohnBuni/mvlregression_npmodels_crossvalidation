@@ -58,25 +58,6 @@ python -m pip install -r requirements.txt
 
 The Diabetes dataset is included with scikit-learn, so no separate dataset download is required.
 
-## Common Setup Issues
-
-**Python not recognized:** Ensure Python is installed and available in your system PATH.
-
-**PowerShell blocks virtual environment activation:** Run the following command, then activate the environment again:
-
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\.venv\Scripts\Activate.ps1
-```
-
-**Missing Python packages:** Confirm that the `.venv` environment is selected and run:
-
-```powershell
-python -m pip install -r requirements.txt
-```
-
-**Module import errors:** Open the entire repository folder in VS Code and run the notebook from there so the `src/` modules can be imported.
-
 ## Documentation
 
 The notebook contains the executable experiments, visualizations, and analysis.
