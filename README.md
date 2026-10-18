@@ -58,6 +58,27 @@ python -m pip install -r requirements.txt
 
 The Diabetes dataset is included with scikit-learn, so no separate dataset download is required.
 
+### Troubleshooting: Virtual Environment Not Appearing as a Jupyter Kernel
+
+If the newly created `.venv` environment does not appear in the VS Code notebook kernel list, register it manually.
+
+From the project root directory, run the following command in the VS Code PowerShell terminal:
+
+```powershell
+.\.venv\Scripts\python.exe -m ipykernel install --user --name lab2-fresh --display-name "Python (Lab2 Fresh)"
+```
+
+After the command completes:
+
+1. Open `PracticalLab2.ipynb`.
+2. Click **Select Kernel** in the upper-right corner.
+3. Select **Select Another Kernel → Jupyter Kernels**.
+4. Choose **Python (Lab2 Fresh)**.
+
+If the kernel does not appear immediately, close and reopen the notebook or reload the VS Code window.
+
+This procedure registers the project's virtual environment as a Jupyter kernel without requiring changes to the notebook code.
+
 ## Documentation
 
 The notebook contains the executable experiments, visualizations, and analysis.
